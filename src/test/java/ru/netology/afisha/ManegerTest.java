@@ -40,9 +40,8 @@ class ManegerTest {
 
     @Test
     void addNewNameFilm() {
-        stat.setNewNameFilm("AAA");
-        stat.addNewNameFilm();
 
+        stat.addNewNameFilm("AAA");
         String[] expected = {"AAA"};
         String[] actual = stat.getNamesFilms();
 
@@ -51,31 +50,19 @@ class ManegerTest {
 
     @Test
     void findLast() {
-        stat.setNewNameFilm("AAA");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("BBB");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("CCC");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("DDD");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("EEE");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("FFF");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("GGG");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("HHH");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("III");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("JJJ");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("KKK");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("LLL");
-        stat.addNewNameFilm();
 
+        stat.addNewNameFilm("AAA");
+        stat.addNewNameFilm("BBB");
+        stat.addNewNameFilm("CCC");
+        stat.addNewNameFilm("DDD");
+        stat.addNewNameFilm("EEE");
+        stat.addNewNameFilm("FFF");
+        stat.addNewNameFilm("GGG");
+        stat.addNewNameFilm("HHH");
+        stat.addNewNameFilm("III");
+        stat.addNewNameFilm("JJJ");
+        stat.addNewNameFilm("KKK");
+        stat.addNewNameFilm("LLL");
         stat.findLast();
 
         String[] expected = {"LLL", "KKK", "JJJ", "III", "HHH", "GGG", "FFF", "EEE", "DDD", "CCC"};
@@ -86,16 +73,12 @@ class ManegerTest {
 
     @Test
     void findLastMin() {
-        stat.setNewNameFilm("HHH");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("III");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("JJJ");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("KKK");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("LLL");
-        stat.addNewNameFilm();
+
+        stat.addNewNameFilm("HHH");
+        stat.addNewNameFilm("III");
+        stat.addNewNameFilm("JJJ");
+        stat.addNewNameFilm("KKK");
+        stat.addNewNameFilm("LLL");
 
         stat.findLast();
 
@@ -108,30 +91,19 @@ class ManegerTest {
     @Test
     void findLastConstr5() {
         Maneger stat = new Maneger(5);
-        stat.setNewNameFilm("AAA");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("BBB");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("CCC");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("DDD");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("EEE");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("FFF");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("GGG");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("HHH");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("III");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("JJJ");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("KKK");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("LLL");
-        stat.addNewNameFilm();
+        stat.addNewNameFilm("AAA");
+        stat.addNewNameFilm("BBB");
+        stat.addNewNameFilm("CCC");
+        stat.addNewNameFilm("DDD");
+        stat.addNewNameFilm("EEE");
+        stat.addNewNameFilm("FFF");
+        stat.addNewNameFilm("GGG");
+        stat.addNewNameFilm("HHH");
+        stat.addNewNameFilm("III");
+        stat.addNewNameFilm("JJJ");
+        stat.addNewNameFilm("KKK");
+        stat.addNewNameFilm("LLL");
+
 
         stat.findLast();
 
@@ -143,30 +115,20 @@ class ManegerTest {
 
     @Test
     void testFindAll() {
-        stat.setNewNameFilm("AAA");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("BBB");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("CCC");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("DDD");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("EEE");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("FFF");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("GGG");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("HHH");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("III");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("JJJ");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("KKK");
-        stat.addNewNameFilm();
-        stat.setNewNameFilm("LLL");
-        stat.addNewNameFilm();
+        stat.addNewNameFilm("AAA");
+        stat.addNewNameFilm("BBB");
+        stat.addNewNameFilm("CCC");
+        stat.addNewNameFilm("DDD");
+        stat.addNewNameFilm("EEE");
+        stat.addNewNameFilm("FFF");
+        stat.addNewNameFilm("GGG");
+        stat.addNewNameFilm("HHH");
+        stat.addNewNameFilm("III");
+        stat.addNewNameFilm("JJJ");
+        stat.addNewNameFilm("KKK");
+        stat.addNewNameFilm("LLL");
+
+        stat.findAll();
 
         String[] expected = {"AAA", "BBB", "CCC", "DDD", "EEE", "FFF", "GGG", "HHH", "III", "JJJ", "KKK", "LLL"};
         String[] actual = stat.getNamesFilms();

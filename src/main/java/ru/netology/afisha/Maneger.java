@@ -1,9 +1,9 @@
 package ru.netology.afisha;
 
 public class Maneger {
-    private String newNameFilm;
     private int howManyLastAddedFilm = 10;
     private String[] namesFilms = {};
+
 
 
     public Maneger() {
@@ -28,11 +28,7 @@ public class Maneger {
         this.howManyLastAddedFilm = howManyLastAddedFilm;
     }
 
-    public void setNewNameFilm(String newNameFilm) {
-        this.newNameFilm = newNameFilm;
-    }
-
-    public void addNewNameFilm() {
+       public void addNewNameFilm(String newNameFilm) {
         String[] tmp = new String[namesFilms.length + 1];
         for (int i = 0; i < namesFilms.length; i++) {
             tmp[i] = namesFilms[i];
@@ -64,6 +60,6 @@ public class Maneger {
             }
             namesFilms = tmp;
         }
-
     }
+
 }
